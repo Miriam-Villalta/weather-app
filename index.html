@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App - SheCodes0</title>
+    <link rel="stylesheet" href="src/styles.css" />
+    <script src="https://unpkg.com/axios@1.1.2/dist/axios.min.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <form action="" class="enter-city">
+          <div class="city">
+            <input
+              type="text"
+              placeholder="Enter a city here"
+              class="input-write"
+            />
+          </div>
+          <div class="btn-search">
+            <input type="submit" value="Search" class="btn" />
+          </div>
+        </form>
+      </header>
+      <main>
+        <h1 class="city-title">Madrid</h1>
+        <div class="info-day">
+          <section class="details">
+            <p class="par first">Saturday 14:42, cloudy</p>
+            <p class="par second">
+              Humidity: <strong>60%</strong>, Wind: <strong>3,2km/h</strong>
+            </p>
+          </section>
+          <p class="temperature"><strong class="icon">&#127774;</strong>10º</p>
+        </div>
+        <ul>
+          <li class="weekdays">&#9925;Sun <br /><strong>7ºC</strong>-13ºC</li>
+          <li class="weekdays">&#9925;Mon <br /><strong>7ºC</strong>-13ºC</li>
+          <li class="weekdays">&#9925;Tue <br /><strong>7ºC</strong>-13ºC</li>
+          <li class="weekdays">&#9925;Wed <br /><strong>7ºC</strong>-13ºC</li>
+          <li class="weekdays">&#9925;Thu <br /><strong>7ºC</strong>-13ºC</li>
+        </ul>
+      </main>
+      <footer>Coded with love by Miriam Villalta</footer>
+    </div>
+    <script src="./src/index.js"></script>
+  </body>
+</html>
