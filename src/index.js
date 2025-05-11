@@ -2,6 +2,15 @@ let city = document.querySelector(".city-title");
 let dayTime = document.querySelector(".first");
 let form = document.querySelector(".enter-city");
 let cityInput = document.querySelector(".input-write");
+let description = document.querySelector(".description");
+let humidity = document.getElementById("humidity");
+let wind = document.getElementById("wind");
+let icon = document.getElementById("weather-icon");
+//let  = document.querySelector("");
+
+console.log(description);
+
+
 
 function formatDate(dayNumber) {
   let days = [
@@ -37,16 +46,25 @@ function dayTimeNow() {
 
   let dayName = formatDate(day);
 
-  dayTime.innerHTML = `${dayName} ${hours}:${minutes}, cloudy`;
+  dayTime.innerHTML = `${dayName} ${hours}:${minutes}, `;
 }
 
 //API call
 function weather(response) {
-  let temperature = document.querySelector(".temperature");
+  let temperature = document.getElementById("temperature");
   let currentTemp = Math.round(response.data.temperature.current);
   
+  
   city.innerHTML = response.data.city;
-  temperature.innerHTML = currentTemp;
+  console.log(temperature);
+  
+  temperature.innerHTML = `${currentTemp}º`;
+   console.log(temperature);
+  description.innerHTML = response.data.condition.description;
+  humidity.innerHTML = `<strong>${response.data.temperature.humidity}º<strong>`;
+  wind.innerHTML = `<strong>${response.data.wind.speed}km/h</strong>`;
+  icon.innerHTML = `<img src="${response.data.condition.icon_url}" class="icon" id="weather-icon"/>`; 
+ 
 }
 
 function apiCall(){

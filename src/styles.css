@@ -1,7 +1,6 @@
 body {
     background-color: aliceblue;
     padding: 10px;
-    
 }
 
 .container {
@@ -13,12 +12,13 @@ body {
     width: 60%;
     margin: 0 auto;
 }
-form{
+
+form {
     display: flex;
     justify-content: space-around;
 }
 
-.input-write{
+.input-write {
     flex-direction: row;
     background-color: rgb(240, 248, 255);
     border: none;
@@ -47,7 +47,7 @@ form{
     border-radius: 5px;
 }
 
-.btn{
+.btn {
     flex-direction: row;
     height: 30px;
     padding: 5px;
@@ -58,37 +58,46 @@ form{
     border: none;
 }
 
-.info-day{
+.info-day {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.details{
+.details {
     flex-direction: row;
     font-size: small;
     color: gray;
-   
-   
+
+
 }
 
-.par{
+.par {
     flex-direction: row;
     margin: 0 auto;
     align-self: center;
 }
 
-strong{
+strong {
     color: rgb(255, 82, 111);
 }
 
-.temperature{
+.temp {
     font-size: 50px;
     font-weight: bold;
     margin: 0px;
     margin-right: 45px;
+    height: 50px;
+    margin-top: 20px;
+
+}
+
+.icon-temp {
+    display: flex;
+    flex-direction: row;
 }
 
 .icon {
     font-size: 30px;
+
 }

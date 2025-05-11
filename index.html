@@ -27,12 +27,18 @@
         <h1 class="city-title">Madrid</h1>
         <div class="info-day">
           <section class="details">
-            <p class="par first">Saturday 14:42, cloudy</p>
+            <p class="par first">Saturday 14:42,</p>
+            <span class="description">cloudy</span>
+
             <p class="par second">
-              Humidity: <strong>60%</strong>, Wind: <strong>3,2km/h</strong>
+              Humidity: <span id="humidity"><strong>60%</strong></span
+              >, Wind: <span id="wind"><strong>3,2km/h</strong></span>
             </p>
           </section>
-          <p class="temperature"><strong class="icon">&#127774;</strong>10º</p>
+          <section class="icon-temp">
+            <strong class="icon" id="weather-icon">&#127774;</strong>
+            <p id="temperature" class="temp">10º</p>
+          </section>
         </div>
         <ul>
           <li class="weekdays">&#9925;Sun <br /><strong>7ºC</strong>-13ºC</li>
@@ -42,22 +48,7 @@
           <li class="weekdays">&#9925;Thu <br /><strong>7ºC</strong>-13ºC</li>
         </ul>
       </main>
-      <footer>
-        Coded with love by Miriam Villalta
-        <div>
-          <a href="https://github.com/Miriam-Villalta" target="_blank"
-            >GitHub</a
-          >
-          <a
-            href="https://github.com/Miriam-Villalta/weather-app"
-            target="_blank"
-            >Repository</a
-          >
-          <a href="https://teal-toffee-b2cf64.netlify.app/" target="_blank"
-            >Netlify</a
-          >
-        </div>
-      </footer>
+      <footer>Coded with love by Miriam Villalta</footer>
     </div>
     <script src="./src/index.js"></script>
   </body>
